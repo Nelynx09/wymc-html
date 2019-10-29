@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: TATSanaChon-regular;
+  src: url(font/TATSanaChon-Regular.woff2);
+}
+@font-face {
+  font-family: TATSanaChon-bold;
+  src: url(font/TATSanaChon-Bold.woff2);
+}
+@font-face {
+  font-family: TATSanaSuksa-regular;
+  src: url(font/TATSanaSuksa-Regular.woff2);
+}
+/* Icon 1 */
+
+.animated-icon1{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+.animated-icon1 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+background: #161616;
+}
+
+.animated-icon2 span {
+background: #e3f2fd;
+}
+
+.animated-icon3 span {
+background: #f3e5f5;
+}
+
+.animated-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+
+#navbarText a:link, a:visited, a:hover, a:active{
+	font-family: TATSanaSuksa-regular;
+	text-decoration: none;
+	color: rgba(115,115,115,1.00);
+}
+
+.banner-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.margin-d {
+	margin: 1.5em 0em;
+}
+
+#duration {
+	margin: 1.5em 0em;
+}
+#duration .btn {
+	background-color: rgba(39,55,135,1.00);
+	font-weight: 600;
+	box-shadow: 0px 5px 15px gray;
+	margin: 1.5em 0em;
+}
+#duration .btn:hover {
+	background-color: rgba(243,185,14,1.00);
+	font-weight: 600;
+	box-shadow: 0px 5px 15px gray;
+	margin: 1.5em 0em;
+}
+
+#logoBox img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#logoCircle img {
+	max-height: 80%;
+	max-width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer1 {
+	font-family: TATSanaSuksa-regular;
+	padding: 1em;
+	background-color: rgba(242,242,242,1.00);
+}
+.f1-head {
+	padding: 0.25em 1.5em;
+	color: rgba(227,12,15,1.00);
+	font-weight: 600;
+}
+.f1-detail {
+	padding: 0.25em 1.5em;
+}
+#footer2 {
+	font-family: TATSanaChon-regular;
+	padding: 1em;
+	background-color: rgba(39,55,135,1.00);
+}
+#footer2 div {
+	padding: 0.25em 1.5em;
+	background-color: rgba(39,55,135,1.00);
+}
+#footer2 a {
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+}
