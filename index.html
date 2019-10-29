@@ -96,10 +96,10 @@
     </div>
     <div id="footer2" class="">
       <div class="row container justify-content-center m-auto">
-        <div class="col-12 col-md-3"><a >Copyright © 2003-2019</a></div>
-        <div class="col-12 col-md-3"><a >ลงทะเบียนเข้าร่วมมาตรการ</a></div>
-        <div class="col-12 col-md-3"><a >ขั้นตอนการเข้าร่วมทั้งหมด</a></div>
-        <div class="col-12 col-md-3"><a >รายชื่อร้านค้าที่เข้าร่วมรายการ</a></div>
+        <div class="col-12 col-md-3 f2-topic"><a >Copyright © 2003-2019</a></div>
+        <div class="col-12 col-md-3"><a id="fregister" class="f2-topic"></a></div>
+        <div class="col-12 col-md-3"><a id="fhowto" class="f2-topic"></a></div>
+        <div class="col-12 col-md-3"><a id="fshop" class="f2-topic"></a></div>
       </div>
     </div>
   </div>
@@ -133,6 +133,13 @@
 		$("#howto").attr('href',navbarItem[1].href);
 		getElement('shop').innerHTML =  navbarItem[2].label;
 		$("#shop").attr('href',navbarItem[2].href);
+		
+		getElement('fregister').innerHTML =  navbarItem[0].label;
+		$("#fregister").attr('href',navbarItem[0].href);
+		getElement('fhowto').innerHTML =  navbarItem[1].label;
+		$("#fhowto").attr('href',navbarItem[1].href);
+		getElement('fshop').innerHTML =  navbarItem[2].label;
+		$("#fshop").attr('href',navbarItem[2].href);
 		
 		getElement('durationText').innerHTML =  duration;
 		getElement('detailText').innerHTML =  detail;

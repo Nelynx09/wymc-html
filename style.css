@@ -162,7 +162,7 @@
 	padding: 1em;
 	background-color: rgba(39,55,135,1.00);
 }
-#footer2 div {
+#footer2 .f2-topic {
 	padding: 0.25em 1.5em;
 	background-color: rgba(39,55,135,1.00);
 }
