@@ -1,0 +1,258 @@
+/* Sass Document */
+
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: TATSanaChon-regular;
+	src: url(font/TATSanaChon-Regular.woff2);
+}
+@font-face {
+	font-family: TATSanaChon-bold;
+	src: url(font/TATSanaChon-Bold.woff2);
+}
+@font-face {
+	font-family: TATSanaSuksa-regular;
+	src: url(font/TATSanaSuksa-Regular.woff2);
+}
+
+$cWhite:#FFFFFF;
+$cBlack:#161616;
+$cRed: #E6332A;
+$cBlue: #213A8F;
+$cYellow: #FBBC33;
+
+.animated-icon1 {
+	width: 30px;
+	height: 20px;
+	position: relative;
+	margin: 0px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	
+	span {
+		background: #161616;
+		display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .25s ease-in-out;
+		-moz-transition: .25s ease-in-out;
+		-o-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
+	}
+	
+	span:nth-child(1){
+		top: 0px;
+	}
+	span:nth-child(2){
+		top: 10px;
+	}
+	span:nth-child(3){
+		top: 20px;
+	}
+	
+	.open{
+		span:nth-child(1) {
+			top: 11px;
+			-webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			-o-transform: rotate(135deg);
+			transform: rotate(135deg);
+		}
+		span:nth-child(2) {
+			opacity: 0;
+			left: -60px;
+		}
+		span:nth-child(3) {
+			top: 11px;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			-o-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+.menu-button {
+	outline: none !important;
+}
+
+#navbarLogo{
+	max-width: 50px;
+}
+
+#navbarText{
+	a:link, a:visited {
+		font-family: TATSanaSuksa-regular;
+		text-decoration: none;
+		color: rgba(115,115,115,1.00);
+	}
+	a:hover, a:active {
+		font-family: TATSanaSuksa-regular;
+		text-decoration: none;
+		color: rgba(39,55,135,1.00);
+	}
+} 
+
+.nav-item{
+	a {
+		position: relative;
+	}	
+} 
+
+@media (min-width:576px) {
+	.nav-item {
+		a:after {
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 5px;
+			left: 50%;
+			position: absolute;
+			background: rgba(39,55,135,1.00);
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		}
+		a:hover:after {
+			width: 100%;
+			left: 0;
+		}
+	}
+}
+
+#bannerLeft{
+	background-image: url(img/banner-left-s.png);
+}
+#bannerCenter{
+	background-image: url(img/banner-center-s.png);
+	padding: 2em 0em; 
+	text-align: center;
+	
+	img{
+		max-width: 100%;
+	}
+}
+#bannerRight{
+	background-image: url(img/banner-right-s.png);
+}
+.banner-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.margin-d {
+	margin: 1.5em 0em;
+}
+
+#durationTextTitle{
+	font-size: 1em;
+	font-family: TATSanaChon-regular;
+	font-weight: 600;
+}
+#durationText{
+	font-size: 3em; 
+	color: $cRed;;
+	font-family: TATSanaChon-regular;  
+	font-weight: 600;
+}
+
+#duration {
+	margin: 1.5em 0em;
+	.btn {
+		padding: 0.5em 2em;
+		background-color: $cBlue;
+		font-weight: 600;
+		margin: 1.5em 0em;
+		a{
+			color: white;
+			font-family: TATSanaChon-regular;  
+			font-size: 1.5em;
+		}
+	}
+	.btn:hover {
+		background-color: $cYellow;
+		font-weight: 600;
+		margin: 1.5em 0em;
+	}
+	
+	hr{
+		margin-top: -40px;
+	}
+}
+
+#detailTextTitle{
+	font-size: 2em; 
+	color: $cRed; 
+	font-family: TATSanaChon-regular; 
+	font-weight: 600;
+}
+#detailText{
+	font-size: 1.125em;
+	font-family: TATSanaSuksa-regular; 
+}
+
+#conditionTextTitle{
+	font-size: 1.125em;
+	font-family: TATSanaChon-regular;
+	font-weight: bold;
+}
+#condtionText{
+	margin-top: 0.5em;
+	font-size: 1.125em;
+	font-family:TATSanaSuksa-regular;
+}
+
+#logoBox img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#logoCircle img {
+	max-height: 80%;
+	max-width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer1 {
+	font-family: TATSanaSuksa-regular;
+	padding: 1em;
+	background-color: rgba(242,242,242,1.00);
+}
+.f1-head {
+	padding: 0.25em 1.5em;
+	color: rgba(227,12,15,1.00);
+	font-weight: 600;
+	font-size: 1em;
+}
+.f1-detail {
+	padding: 0.25em 1.5em;
+	font-size: 0.875em;
+}
+#footer2 {
+	font-family: TATSanaChon-regular;
+	padding: 1em;
+	background-color: rgba(39,55,135,1.00);
+	
+	.f2-topic {
+		padding: 0.25em 1.5em;
+		background-color: rgba(39,55,135,1.00);
+	}
+	
+	a {
+		font-size: 0.75em;
+		font-weight: 600;
+		color: white;
+	}
+}
